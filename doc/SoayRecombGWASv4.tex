@@ -1,0 +1,389 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{todonotes}
+\usepackage{makecell}
+\usepackage{ragged2e}
+\usepackage{array,multirow}
+
+
+\usepackage{natbib}
+\bibliographystyle{genetics}
+
+%\usepackage[numbers,compress, super]{natbib}   %square
+%\bibliographystyle{abbrvnat}
+%\bibliographystyle{unsrtnat}
+
+
+\usepackage[section]{placeins}
+\usepackage[T1]{fontenc}
+
+\usepackage{mathtools}
+\usepackage{float}
+\usepackage[font=small,labelfont=bf,width=.9\textwidth ]{caption}
+
+\usepackage{amsfonts}
+\usepackage{garamondx}
+\usepackage[garamondx,cmbraces]{newtxmath}
+%\usepackage{helvet}
+%\renewcommand{\familydefault}{\sfdefault}
+
+\usepackage{lineno}
+\linenumbers
+\renewcommand\linenumberfont{\normalfont}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{H}{>{\setbox0=\hbox\bgroup}c<{\egroup}@{}}
+
+
+\usepackage{titlesec}
+\titleformat{\subsubsection}[runin]{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+\addtolength{\skip\footins}{12pt}
+
+\usepackage{anysize}
+\usepackage[margin=1.25in]{geometry}
+
+\renewcommand{\baselinestretch}{1.2} 
+\setlength{\parskip}{\baselineskip}
+\setlength{\parindent}{0pt}
+\presetkeys{todonotes}{size=\tiny, color=blue!30}{}
+\setlength{\marginparwidth}{2.5cm}
+
+\usepackage{setspace}
+\doublespacing
+
+\usepackage{authblk}
+
+
+\title{\LARGE{Variants at \textit{RNF212} and \textit{RNF212B} are associated with recombination rate variation in Soay sheep (\textit{Ovis aries}).}}
+
+
+\author[1,*]{\normalsize{Susan E. Johnston}}
+\author[1]{\normalsize{Martin Stoffel}}
+\author[1]{\normalsize{Josephine M. Pemberton}}
+\affil[1]{\small{Institute of Evolutionary Biology, School of Biological Sciences,}}
+\affil[ ]{University of Edinburgh, Edinburgh, EH9 3FL, United Kingdom}
+\affil[*]{\small{Corresponding author: Susan.Johnston@ed.ac.uk }}
+
+
+%\renewcommand\Authands{ and }
+\renewcommand\Authands{, }
+\date{}
+
+
+\begin{document}
+
+%\listoftodos[Notes]
+
+\maketitle
+
+\section*{Abstract}
+
+[to be written]
+
+\pagebreak
+\section*{Introduction}
+
+Meiotic recombination is ubiquitous in sexually-reproducing organisms and is an important driver of genomic diversity in eukaryotes \citep{Barton1998, Otto2002}. The process of crossing-over ensures the proper disjunction of homologous chromosomes during meiosis \citep{Hassold2001}, with most species having a minimum requirement of at least one obligate crossover per chromosome pair \citep{Otto2019}. It also has the advantage of generating novel haplotypes and preventing the accumulation of harmful mutations in the genome, allowing populations to respond to selection faster and to a greater degree \citep{Muller1964, Hill1966, Battagin2016}. However, this can come at the cost of increased mutations at crossover sites \citep{Halldorsson2019} and the break up of favourable haplotypes \citep{Barton1998}. Variation in recombination rate is likely to arise across taxa with variation in genome size and chromosome number \citep{Stapley2017}; in addition, the evolutionary costs and benefits of recombination may vary depending on the selective context, again leading to the expectation of recombination rate variation within and between populations \citep{Otto2001, Otto2002}. Indeed, cytogenetic and linkage mapping studies have shown that recombination rates can vary by orders of magnitude within and between chromosomes \citep{Myers2005}, individuals \citep{Kong2004}, populations \citep{Samuk2020}, sexes \citep{Lenormand2005} and species \citep{Stapley2017}.
+
+In mammals, genomic studies in different species (i.e. humans, cattle, sheep, pigs and deer) have shown that recombination rate is often heritable, with a significant proportion of the additive genetic variation underpinned by loci of moderate to large effects \citep{Sandor2012, Kong2014, Ma2015, Kadri2016, Petit2017, Johnston2018, Johnsson2020}. Genome-wide association studies (GWAS) have shown repeated associations with variants at ring finger protein 212 \textit{RNF212} and its paralogue \textit{RNF212B}, whose associated proteins are essential for the crossover designation process during meiosis \citep{Reynolds2013}, as well as other loci with established roles in meiotic processes (e.g. \textit{HEI10}, \textit{REC8} and \textit{TOP2}; \citealt{Sandor2012, Kong2014, Ma2015, Kadri2016, Petit2017, Johnston2018, Johnsson2020}). This heritable, oligogenic architecture implies that recombination rate has the potential to evolve rapidly to selection if variation in recombination rate is associated with individual fitness \citep{Otto2001, Stapley2017}. Therefore, detailed examination of the genetic architecture of recombination rate is a critical step in understanding how rates are evolving over different evolutionary timescales.
+
+The Soay sheep (\textit{Ovis aries}) are a Neolithic breed of domestic sheep that have been living wild on the St Kilda archipelago since the Bronze age. These sheep are a model system for studies of ecology and evolution, and have been intensively studied since 1985 \citep{CluttonBrock2004}. A previous study integrated pedigree information with genotypic data from $\sim$39,000 SNPs to characterise autosomal crossover counts (ACCs) in $\sim$3,300 gametes transmitted from parents to their offspring \citep{Johnston2016}. A GWAS showed that a single region on chromosome 6, corresponding to the locus \textit{RNF212}, explained around 47\% of heritable variation in female ACC only. A broader-scale ``regional heritability'' analysis identified a tentative association in both sexes at a 1.09 Mb region on chromosome 7, containing the candidate loci \textit{REC8} and \textit{RNF212B}), but this was not significant in the GWAS or in sex-specific regional heritability models. Since then, addition of more SNP genotyped individuals and improvements in pedigree construction methodology \citep{Huisman2017} now allows us to characterise recombination rate in a further $\sim$3,900 gametes. Furthermore, advances in genotype imputation methods in complex pedigrees has allowed us to increase the SNP dataset for conducting genome-wide association study from $\sim$39,000 to $\sim$417,000 SNPs. 
+
+Here, we revisit our previous analysis to carry out GWAS of male and female recombination rate. Our motivation for this study was to: (a) confirm a sex-limited association with \textit{RNF212} on chromosome 6; (b) fine-map the association on chromosome 7 and determine the action and effect size of this locus in both males and females; and (c) to identify any further associations that could not be detected using the previous dataset.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% MATERIALS AND METHODS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section*{Materials and Methods}
+
+\subsection*{Study Population.}
+
+Soay sheep living within the Village Bay area on the island of Hirta, St Kilda, Scotland (57$^{\circ}$49`N, 8$^{\circ}$34`W) have been individually studied since 1985 \citep{CluttonBrock2004}. All sheep are ear-tagged at their first capture, including 95\% of lambs born within the study area, and the majority of animals are recaptured on an annual basis. DNA samples are routinely obtained from ear punches and/or blood sampling. All animal work is carried out according to UK Home Office procedures and was licensed under the UK Animals (Scientific Procedures) Act 1986 (License no. PPL60/4211). 
+
+\subsection*{Genotype and Pedigree Data.}
+
+All sheep were genotyped at 51,135 SNP markers on the Illumina Ovine SNP50 BeadChip \citep{Kijas2009}. Quality control was carried out using the check.marker function in GenABEL v1.8-0 with the following thresholds: SNP minor allele frequency (MAF) > 0.001, SNP locus genotyping success > 0.99, individual sheep genotyping success > 0.95; a total of 7,700 sheep and 39,398 SNPs remained. Pedigree relationships were previously inferred using data from 438 SNP loci in the R package Sequoia v1.02 \citep{Huisman2017} and from field observations between mothers and their offspring born within the study area. Autosomal SNP genotypes were used to calculate the $\hat{F}_{III}$ genomic inbreeding coefficients using GCTA v1.90.2 \citep{Yang2011}.
+
+A further 189 individuals were genotyped at 430,702 polymorphic SNPs on the Ovine Infinium HD SNP BeadChip for imputation of genotypes into individuals typed on the 50K chip (see \citealt{Johnston2016} for method and individual selection criteria and \citealt{Stoffel2020} for full imputation method for this dataset). Briefly, SNP genotypes from the HD Chip were imputed into the SNP50 Chip typed individuals using AlphaImpute v1.98 \citep{Hickey2012, Antolin2017} resulting in a dataset with 7,691 individuals genotyped at 417,373 SNPs, with a mean genotyping rate per individual of 99.5\% (range 94.8\% - 100\%). As there were no X-chromosome SNPs in common between the two SNP Chips, only the SNP50 Chip SNPs were used for association analyses on the X chromosome. SNP positions for both chips were are known relative to sheep genome assembly Oar\_v3.1 (GenBank assembly ID GCA\_000298735.1).
+
+\subsection*{Estimation of autosomal crossover counts and linkage maps.}
+
+Autosomal crossover positions were estimated using an identical protocol to that outlined in \citeauthor{Johnston2016} (\citeyear{Johnston2016}). Briefly, the method uses Ovine SNP50 BeadChip SNP data from a focal individual's parents, mate and offspring to characterise crossovers that occurred in the gametes transmitted from the focal individual to its offspring. Crossovers were determined using the software CRI-MAP v2.504a \citep{Green1990}. Here, we estimated ACC for a further 3,908 gametes, leading to a dataset of ACC for 7,235 gametes transmitted from 1,632 unique focal individuals. Because of differences in the SNP quality control between analyses, we used 37,853 SNPs in common with the previous recombination rate study. Simulation studies showed that this method will identify \textgreater 99\% of crossovers, meaning that ACC estimated using this method can be used as a proxy for individual recombination rate. The method also provides linkage maps for each chromosome, allowing us to update the existing map for Soay sheep to include information from a much larger number of meioses.
+
+\subsection*{Animal Models}
+
+A restricted maximum likelihood (REML) animal model approach \citep{Henderson1975} was used to estimate components of phenotypic variance for ACC, including the additive genetic effect (i.e. heritability). A genomic relatedness matrix (GRM) was constructed for all polymorphic autosomal SNPs from the 50K chip using GCTA v1.90.2 \citep{Yang2011} and was adjusted with the argument \textit{{-}{-}grm-adj 0}, which assumes a similar frequency spectra of genotyped and causal loci. Related individuals were not removed from the GRM as there is high relatedness in the study population, and there are were no significant parental effects or common environment effects on individual recombination rate \citep{Johnston2016}. Animal models were constructed for both sexes combined, females only and males only, and were run in ASReml-R v4 \citep{Butler2009} in R v3.6.2. Fixed effects included sex (in the combined model) and the genomic inbreeding coefficient $\hat{F}_{III}$; initial models fit age in years fit as a linear covariate, but as it was not significant, it was removed from the final models (Figure \ref{fig:Sex_F_Age}). The significance of fixed effects was tested using Wald tests. Random effects included the additive genetic effect (as estimated using the GRM) and identity of the focal individual (i.e. ``permanent environment'') effect to account for repeated measures. Despite not being significant, the fixed effect $\hat{F}_{III}$ and the random permanent environment effect were retained in all models to account for potential underestimation of ACC due to long runs of homozygosity and pseudoreplication, respectively. Significance of the additive genetic effect was determined by dropping the additive genetic effect from each model and comparing with the full model using a likelihood ratio test distributed as $\chi^{2}_{1}$. Bivariate models examining the genetic correlation $r_{A}$ between male and female ACC were run using the CORGH error structure in ASReml-R (correlation with heterogeneous variances). Models were set with $r_{A}$ to be unconstrained. To test whether $r_{A}$ was significantly different from 0 and 1, the model was compared to models with $r_{A}$ fixed at a value of 0 or 0.999 using likelihood ratio tests.  
+
+\subsection*{Genome-wide association studies.}
+
+%Genome-wide association studies of ACC with imputed SNPs were carried out using an animal models for each individual SNP locus, with SNP genotype fit as a two or three level fixed factor. Models were run on the Edinburgh Compute and Data Facility (ECDF) using ASReml-R v3 in R v3.3.2. A pedigree relatedress matrix was fit instead of the GRM in order to speed up computation; previous work has shown that the pedigree and GRM matrices are highly correlated in this population \citep{Berenos2014}. Association was taken as the Wald statistic for inclusion of the SNP effect in the model, distributed as  $\chi^{2}$ with 1 or 2 degrees of freedom, depending if two or three genotypes were observed at that locus. Models were run in both sexes, females only and males only, with sex (if applicable) and $\hat{F}_{III}$ fitted as fixed effects. Association statistics were corrected for further inflation by dividing by the genomic control parameter $\lambda$, calculated as the median Wald test $\chi^{2}_{2}$ divided by the median $\chi^{2}_{2}$ expected under a null distribution. 
+
+Genome-wide association studies of ACC with the imputed SNP dataset were carried out using function \textit{rGLS} in the package RepeatABEL v1.1.31 \citep{Ronnegard2016} in R v3.6.2. This approach fits both repeated measures and the GRM, the latter accounting for population structure. Association statistics were corrected for any further inflation by dividing by the genomic control parameter $\lambda$, calculated as the median observed $\chi^{2}_{1}$ statistic divided by the median $\chi^{2}_{1}$ expected under a null distribution. The significance threshold at $\alpha$ = 0.05 was calculated by \citeauthor{Stoffel2020} (\citeyear{Stoffel2020}) as $P < 1.28 \times 10^{-06}$, using a `simpleM' approach using linkage disequilibrium information to determine the effective number of independent tests \citep{Gao2008}.
+
+For the most highly-associated SNPs, genotype effect sizes were estimated by fitting the SNP genotype as a three level factor in the animal models described above. Then, in separate models, the proportion of phenotypic variance explained by significant regions was then determined using a regional heritability approach. For these models, GRMs were constructed as above for the 20 SNPs from the SNP50 chip spanning the highest association SNP (i.e. 10 SNPs from either side of the association). In one case where the association was at the end of the chromosome, the last 20 SNPs on that chromosome were used to construct the GRM. These regional GRMs were then fit as additional random effects in the animal models described above, with their significance determined using likelihood ratio tests distributed as $\chi^{2}_{1}$.
+
+In order to identify potential candidate genes for ACC, sheep gene IDs SNPs in the broad associated regions were extracted from Ensembl (gene build ID Oar\_v3.1.100) using the function \textit{getBM} in the R package biomaRt v2.42.1 \citep{Durinck2009} in R v3.6.2. Gene orthologues in humans (\textit{Homo sapiens}), cattle (\textit{Bos taurus}), mouse (\textit{Mus musculus}) and rat (\textit{Rattus norvegicus}) were extracted using the function \textit{getLDS}. The associated gene ontology (GO annotations) information for all genes and orthologues were then extracted, again using the \textit{getBM} function. All gene names, phenotype descriptions, GO terms and definitions were then queried for terms associated with meiosis and recombination, using the R command \textit{grep} with the text strings \textit{meio} and \textit{recombin}.
+
+\subsection*{Data Availability}
+Raw data will be publicly archived. Code for the analysis is archived at \\ https://github.com/susjoh/Soay\_Recombination\_2020.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% RESULTS                %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Results}
+
+\subsection*{Variation and heritability of autosomal crossover count.}
+Males had higher recombination rates than females, with 7.24 more autosomal crossovers observed per gamete (SE = 0.18. Wald $\chi^{2}_{1}$ = 1613.6, P < 0.001; Figure \ref{fig:Sex_F_Age}). There was no association with ACC and age or the inbreeding coefficient $\hat{F}_{III}$ (P > 0.05; Figure \ref{fig:Sex_F_Age}). Females had higher phenotypic variance than males (female $V_{P}$ = 32.41, male $V_{P}$ = 24.162; Table \ref{tbl:Heritability}). ACC was heritable in both sexes ($h^{2}$ = 0.148) and in males and females separately ($h^{2}$ = 0.118 and 0.181, respectively; Table \ref{tbl:Heritability}); likelihood ratio tests confirmed that including the additive genetic effect significantly improved the animal models ($\chi^{2}_{1}$ = 139.4, 19.72 and 119.9 for both sexes, males, and females, respectively; P < 0.001). The permanent environment contribution to phenotypic variance was not significant in any models (P > 0.05), with the remaining variance attributed to residual effects (Table \ref{tbl:Heritability}). Bivariate models of ACC between males and females showed a positive genetic correlation ($r_{A}$ = 0.555, SE = 0.138) that was significantly different from both $r_{A}$ = 0 and 1 ($\chi^{2}_{1}$ = 11.95 and 17.91, respectively; P < 0.001). Linkage map lengths from the ACC analysis in this study were strongly correlated with the previous maps (linear regression, adjusted $R^{2}$ \textgreater 0.999, Figure \ref{fig:Linkage_Map_R2}). The updated map had 15,787 unique centiMorgan positions compared with 12,359 in the previous study; it is is provided in Table \ref{tbl:Linkage_Map} and Figure \ref{fig:Sex_specific_linkage_maps}. 
+
+
+
+\subsection*{Genome-wide Association Study.}
+
+There was a strong association between SNPs at the sub-telomeric region of chromosome 6 and female ACC (\textit{oar3\_OAR6\_116402578}, P = 2.45 $\times$ 10$^{-17}$; Figures \ref{fig:GWAS_600K} \& \ref{fig:chr6_region}; Tables \ref{tbl:GWAS_Top_SNPs} \& \ref{tbl:GWAS_Results}). This locus explained 45.9\% of the heritable variation in female ACC, with a difference of 5 crossovers per gamete between the two homozygotes (Figure \ref{fig:SNP_Fixef_Sizes}, Table \ref{tbl:GWAS_Top_SNPs}). There was no significant association with this locus and male ACC, confirming that its action is likely to be sex-limited. The same SNP showed the highest genome-wide association in the previous study \citep{Johnston2016} and occurs 25.2 kb from the putative location of \textit{RNF212}. It should be noted that \textit{RNF212} is not annotated on the Oar\_v3.1 sheep genome due to a gap in the sequence, but is predicted to be positioned between 116,427,802 and 116,446,904 bp \citep{Johnston2016}; \textit{RNF212} is present in this position on the Oar\_rambouillet\_v1.0 genome assembly (GenBank assembly ID GCA\_002742125.1). A second association was observed in both sexes on chromosome 7 (\textit{oar3\_OAR7\_21368818} and \textit{oar3\_OAR7\_21347355}, P = 6.11 $\times$ 10$^{-13}$, 1.83 $\times$ 10$^{-10}$ and 7.20 $\times$ 10$^{-7}$ in both sexes combined, females and males, respectively); the association statistic in males was also identical for locus \textit{oar3\_OAR7\_21116299} (Figures \ref{fig:GWAS_600K} \& \ref{fig:chr7_region}; Tables \ref{tbl:GWAS_Top_SNPs} \& \ref{tbl:GWAS_Results}). The action of this locus was similar between males and females, with a difference of $\sim$4.5 crossovers per gamete between the two homozygotes (Figure \ref{fig:SNP_Fixef_Sizes}, Table \ref{tbl:GWAS_Top_SNPs}) and explaining between 19.7\% and 24.8\% of the heritable variation in ACC. These SNPs spanned the candidate locus \textit{RNF212B} (21,241,831 to 21,273,165 bp). GO term analysis indicated that both \textit{RNF212} and \textit{RNF212B} were the closest genes to each hit that were associated with meiotic processes (Table \ref{tbl:Gene_list}; Figures \ref{fig:chr6_region} \& \ref{fig:chr7_region}).
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% DISCUSSION             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\pagebreak
+
+\section*{Discussion}
+
+This study revisited a previous analysis investigating the genetic architecture of ACC in Soay sheep, with more than double the number of gametes and more than ten times the number of SNP loci. We confirmed that ACC is $\sim$1.27 times higher in males than in females, and is not associated with age or inbreeding in neither males nor females. We identified two candidate genes associated with ACC: \textit{RNF212} on chromosome 6, which is associated with female recombination rate only; and its paralogue \textit{RNF212B} on chromosome 7, which is associated with recombination rate in both sexes. Both loci have repeatedly been associated with recombination rate variation in mammals, with all studies conducted to date implicating either one or both of these loci; these include humans \citep{Kong2008, Kong2014}, cattle \citep{Sandor2012, Ma2015, Kadri2016}, pigs \citep{Johnsson2020}, deer \citep{Johnston2018} and domestic sheep \citep{Petit2017}. Functional studies in mice indicate that the protein RNF212 is essential for crossover formation during meiosis, and that it has a dosage sensitive effect \citep{Reynolds2013}. We observe an additive effect of alleles on ACC at both loci in this study, suggesting that a similar dosage sensitive effect is the mechanism driving rate differences in Soay sheep.
+
+The current study confirms the previous association at \textit{RNF212} and does not gain any novel insights into the nature of its association with ACC. However, the observation at \textit{RNF212B} builds on tentative evidence of an association in this genomic region. In the 2016 study, a genome-wide regional heritability analysis identified an association in both sexes combined in a 1.09Mb region, which contained \textit{RNF212B} and another candidate locus, meiotic recombination protein \textit{REC8}. However, there was no corresponding association using GWAS and there was no significant effect observed in the sex-specific regional heritability analyses, providing limited insight into the action of this region on ACC variation. In this study, we have shown that adding a larger number of gametes and SNPs has increased the power to detect an association at \textit{RNF212B}, and indicating that ACC variation is more likely to be attributed to \textit{RNF212B} than \textit{REC8} (although see further discussion below). The MAF of \textit{RNF212B} is relatively low (0.082), suggesting that lower sample sizes in the 2016 study were not sufficient to detect the effects of rare loci within the population. Using the SNP50 Chip alone, the increased number of gametes in current study would shown a significant on chromosome 7 in females (but not in males; Figure \ref{fig:chr7_region}), however, the highest association would be around 345Kb away from the that observed in the current study. Our work shows that increasing marker density using imputation is likely to be an increasingly important approach in conducting GWAS in natural populations.  
+
+Soay sheep have extensive linkage disequilibrium (LD) throughout the genome due to recent population bottlenecks, a small effective population size and a high prevalence of inbreeding \citep{CluttonBrock2004, Stoffel2020}. An advantage of this is that there is a higher change of typing SNP loci that are in LD with causal loci, and that genotype imputation can be carried out with high accuracy. However, a disadvantage is that high LD within the population makes it difficult to separate the effects of linked loci that also contribute to phenotypic variation in the population. The associated regions on both chromosomes 6 and 7 extend over several megabases, with several other loci associated with meiotic processes occurring within these regions (Figures \ref{fig:chr6_region} \& \ref{fig:chr7_region}, Table \ref{tbl:Gene_list}); we cannot rule out that these loci also affect variation in ACC in Soay sheep. Functional validation of the role of \textit{RNF212} and \textit{RNF212B} is not possible within this wild system as experimental manipulation and invasive sampling are prohibited. However, further studies in domestic sheep (e.g. \citealt{Petit2017}) and related species may further elucidate the role of loci within these regions and the relative importance of regulatory and protein-coding variation in driving recombination rate variation.
+
+Overall, this study has highlighted the merits of genotype imputation and increasing sample sizes to determine the genetic architecture of recombination rate variation in a natural system. Identifying candidate loci and their sex-specific effect sizes provides a stepping stone for future studies investigating the evolution of recombination rates within this and related systems, through modelling the temporal dynamics of these loci, their origin and their association with individual fitness.
+
+
+\section*{Acknowledgements}
+
+We thank Jill Pilkington, Ian Stevenson and all Soay sheep project members and volunteers for collection of data and samples. Camillo B\'er\'enos, Philip Ellis and Hannah Lemon prepared DNA samples for Ovine SNP50 BeadChip genotyping and Jisca Huisman assisted with the pedigree construction. This work has made extensive use of the resources provided by the Edinburgh Compute and Data Facility (http://www.ecdf.ed.ac.uk/). Permission to work on St Kilda is granted by The National Trust for Scotland, and logistical support is provided by QinetiQ and Eurest. The Soay sheep project has been supported by grants from the UK Natural Environment Research Council, with the SNP genotyping funded by a European Research Council Advanced Grant to JMP. SEJ is supported by a Royal Society University Research Fellowship. 
+
+\section*{Author Contributions}
+
+S.E.J and J.M.P. conceived the study. J.M.P organised the collection of samples. M.S. conducted the genotype imputation. S.E.J. analysed the data and wrote the paper. All authors contributed to revisions.
+
+\pagebreak
+
+%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%% FIGURES AND TABLES HERE BECAUSE EMBEDDING IS STRESSFUL        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%                        %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section*{Figures and Tables}
+
+\begin{figure}[H]
+	%	\vspace{3cm}
+	\centering 
+	\includegraphics[width=1\textwidth]{../figs/1_Sex_Fhat3_Age_corrs.png}
+	\captionsetup{width=.9\textwidth}
+	\caption{Association between autosomal crossover count and: A. sex; B. inbreeding coefficient $\hat{F}_{III}$; and C. age in years. Plots were made using the raw data. Points are red for females and blue for males. Lines in B. and C. are general additive model smoothing parameters as fit by the plotting library ggplot2 v3.3.2 \citep{Wickham2016} in R v3.6.2. Points in plot C are slightly jittered between the sexes on the x-axis to more clearly visualise the sex differences with age. Sample sizes are provided in Table \ref{tbl:Heritability}.}
+	\label{fig:Sex_F_Age}
+\end{figure} 
+
+\pagebreak
+
+\begin{figure}[H]
+	\centering 
+	\includegraphics[width=1\textwidth]{../figs/2_SEJ_GWAS_600K_composite.png}
+	\captionsetup{width=1\textwidth}
+	\caption{Genome-wide association plots of autosomal crossover counts for A. both sexes combined, B. females only and C. males only. The dashed line is the significant threshold equivalent to $\alpha$ \textless 0.05. The left panels show the association for individual SNPs relative to their genomic position, with points colour-coded by chromosome. The right plots show the distribution of the observed $-log_{10}P$ values against those expected under a null distribution. All association statistics have been corrected for genomic control using the $\lambda$ parameter. All results are provided in Table \ref{tbl:GWAS_Results}. Sample sizes are provided in Table \ref{tbl:Heritability}.}
+	\label{fig:GWAS_600K}
+\end{figure}
+
+\pagebreak
+
+\begin{table}[H]
+	%	\vspace{3cm}
+	\captionsetup{width=.9\textwidth}
+	\caption{Data information and animal model results for autosomal crossover count (ACC) in Soay sheep. Numbers in parentheses are the standard error unless otherwise stated. N$_{OBS}$ is the observed number of gametes, with numbers in parentheses the number of unique focal individuals. N$_{xovers}$ are the total number of crossovers in the dataset. The mean ACC and the variance (V$_{OBS}$) were calculated from the raw data. $V_{P}$ is phenotypic variance. $h^{2}$, $pe^{2}$ and $e^{2}$ are the narrow-sense heritability, the permanent environment effect, and the residual effect, respectively; all are calculated as the proportion of $V_{P}$.}
+	\centering
+	
+	\setlength{\extrarowheight}{.5em}
+	\begin{tabular}{ccccccccc}
+		\hline
+		Analysis & N$_{OBS}$ &  N$_{xovers}$ & Mean & V$_{OBS}$ & $V_{P}$ & $h^{2}$ & $pe^{2}$ & $e^{2}$ \\ 		\hline
+		
+		Both Sexes	&	7626	&	227646	&	29.851	&	41.32	&	29.514	&	0.148	&	0.025	&	0.827	\\
+		&	(1483)	&		&		&		&	(0.588)	&	(0.019)	&	(0.013)	&	(0.014)	\\
+		Males	&	3043	&	103914	&	34.149	&	23.974	&	24.162	&	0.118	&	0	&	0.882	\\
+		&	(434)	&		&		&		&	(0.72)	&	(0.032)	&	(0.024)	&	(0.02)	\\
+		Females	&	4583	&	123732	&	26.998	&	32.439	&	32.41	&	0.181	&	0	&	0.819	\\
+		&	(1049)	&		&		&		&	(0.797)	&	(0.024)	&	(0.017)	&	(0.017)	\\
+		
+		\hline
+		
+	\end{tabular}
+	
+	\label{tbl:Heritability}
+\end{table}
+
+\pagebreak
+
+\begin{table}[H]
+	\captionsetup{width=.9\textwidth}
+	\caption{The most highly associated SNPs from GWAS of ACC in Soay sheep. MAF is the minor allele frequency (corresponding to the A allele for each locus). Sex indicates if the model was run in both sexes combined, or in females or males only. P is the P-value for the association statistic after correction using genomic control $\lambda$. Effect sizes are provided for animal models where the genotype fit as a fixed factor, and are given relative to the model intercept of 0 at genotype AA. Prop. $V_{A}$ is the proportion of the additive genetic variance explained by the genomic region containing the SNP locus. All values in parentheses are standard errors. Full GWAS results are provided in Table \ref{tbl:GWAS_Results}. Effect sizes and associated sample sizes for each genotype are shown in Figure \ref{fig:SNP_Fixef_Sizes}.}
+	\small
+	\centering
+	\setlength{\extrarowheight}{.5em}
+	\begin{tabular}{lccccccc}
+		
+		\hline
+		
+		SNP Information        &	MAF	&	Sex	&	P	&	Effect AG	&	Effect GG	&	Prop. $V_{A}$	\\ \hline
+		oar3\_OAR6\_116402578	&	0.275	&	Both Sexes	&	2.45 $\times$ 10$^{-17}$	&	2.201	&	3.837	&	0.399	\\
+		Chr. 6           	&		&		&		&	(0.332)	&	(0.361)	& (0.118) \\
+		Position 116,402,578	&		&	Females	&	1.68 $\times$ 10$^{-18}$	&	3.038	&	4.985	&	0.459	\\
+		Candidate Gene: \textit{RNF212} &		&		&		&	(0.397)	&	(0.423)	&	(0.115)	\\
+		&		&	Males	&	0.0317	&	0.168	&	0.884	&	0.049	\\
+		&		&		&		&	(0.577)	&	(0.607)	&	(0.067, ns)	\\ \hline
+		oar3\_OAR7\_21368818*	&	0.082	&	Both Sexes	&	6.11 $\times$ 10$^{-13}$	&	-2.383	&	-4.520	&	0.242\\
+		Chr. 7	            &		&		&		&	(0.922)	&	(0.952)	&	(0.102)	\\
+		Position 21,368,818	&		&	Females	&	1.83 $\times$ 10$^{-10}$	&	-2.705	&	-4.757	&	0.197	\\
+		Candidate Gene: \textit{RNF212B} &		&		&		&	(1.152)	&	(1.194)	&	(0.09)	\\
+		&		&	Males	&	7.20 $\times$ 10$^{-07}$	&	-2.479	&	-4.394	&	0.248	\\
+		&		&		&		&	(1.454)	&	(1.447)	&	(0.145)	\\
+		
+		\hline
+		
+	\end{tabular}
+\vspace{0.2cm}
+
+* This association was identical to hits at SNP loci oar3\_OAR7\_21347355 at position 21,347,355 (in both sexes, males and females) and oar3\_OAR7\_21116299 at position 21,116,299 (in males).
+	\label{tbl:GWAS_Top_SNPs}
+\end{table}
+
+\pagebreak
+
+\bibliography{SoayFitnessManuscript} 
+
+
+\section*{Supplementary Information}
+
+\renewcommand{\thefigure}{S\arabic{figure}}
+\setcounter{figure}{0}
+\renewcommand{\thetable}{S\arabic{table}}
+\setcounter{table}{0} 
+
+%~~~~~~~~~~~~~~~~~~~~~~~ Figures
+
+\begin{figure}[H]
+	\centering 
+		\captionsetup{width=.9\textwidth}
+    \includegraphics[width=0.6\textwidth]{../figs/2_Linkage_Map_Correspondence.png}
+	\caption{Correlation between linkage map lengths determined in the previous study \citep{Johnston2016} and in the current study. Each point indicates a chromosome, and lines indicate linear regressions. Points are coloured by sex-averaged or sex-specific map types. The black dashed line indicates a perfect correlation with slope = 1 and intercept = 0.}
+	\label{fig:Linkage_Map_R2}
+\end{figure} 
+
+\begin{figure}[H]
+	\centering 
+	\captionsetup{width=.9\textwidth}
+	\includegraphics[width=1\textwidth]{../figs/2_Linkage_Map.png}
+	\caption{Sex-specific linkage maps for each sheep chromosome plotted relative to the sheep genome assembly Oar\_v3.1. The underlying map data is provided in Table \ref{tbl:Linkage_Map}. Chromosome 27 is the X chromosome, with the short map segment in male sheep corresponding to the pseudoautosomal region (PAR).}
+	\label{fig:Sex_specific_linkage_maps}
+\end{figure} 
+
+
+\begin{figure}[H]
+	\centering 
+	\captionsetup{width=.9\textwidth}
+	\includegraphics[width=1\textwidth]{../figs/8_SNP_Effect_Sizes_Fixef.png}
+	\caption{Effect sizes for the most highly associated SNPs shown for males and females, as calculated from animal models including the SNP genotype as a fixed factor. Genotype AA is the model intercept. Numbers indicate the number of observations at each genotype, with the number of unique focal individuals in parentheses.}
+	\label{fig:SNP_Fixef_Sizes}
+\end{figure} 
+
+
+\begin{figure}[H]
+	\centering 
+	\captionsetup{width=.9\textwidth}
+	\includegraphics[width=1\textwidth]{../figs/8_Chr_6_Region.png}
+	\caption{Regional association statistics for the significant region on chromosome 6. Each point represents a single SNP locus, coloured by their origin on the SNP50 (red) or SNPHD Chips (black, i.e. imputed genotypes). The positions of genes associated with meiotic processes are shown as black bars at the top of each plot (Gene information in Table \ref{tbl:Gene_list}).}
+	\label{fig:chr6_region}
+\end{figure} 
+
+
+\begin{figure}[H]
+	\centering 
+	\captionsetup{width=.9\textwidth}
+	\includegraphics[width=1\textwidth]{../figs/8_Chr_7_Region.png}
+	\caption{Regional association statistics for the significant region on chromosome 7. Each point represents a single SNP locus, coloured by their origin on the SNP50 (red) or SNPHD Chips (black, i.e. imputed genotypes).The positions of genes associated with meiotic processes are shown as black bars at the top of each plot (Gene information in Table \ref{tbl:Gene_list}).}
+	
+		\label{fig:chr7_region}
+	\end{figure} 
+
+
+%~~~~~~~~~~~~~~~~~~~~~~~ Tables
+
+
+\begin{table}[H]
+	\captionsetup{width=.9\textwidth}
+	\caption{Fixed effects in animal models of autosomal crossover count. Models were run in both sexes, males and females. All Wald statistics were equivalent to a $\chi^{2}$ test with 1 degree of freedom.}
+	\centering
+	\small
+	\setlength{\extrarowheight}{.5em}
+	\begin{tabular}{ccccccc}
+		\hline
+Model	&	Effect	&	Estimate	&	SE	&	Z Ratio	&	Wald Statistic	&	P	\\ \hline
+Both Sexes	&	(Intercept)	&	26.966	&	0.106	&	253.849	&	112596.078	&	0.0000	\\
+&	Fhat3	&	1.148	&	3.692	&	0.311	&	0.097	&	0.7557	\\
+&	Sex (Male)	&	7.236	&	0.180	&	40.161	&	1613.634	&	0.0000	\\
+Males	&	(Intercept)	&	34.178	&	0.144	&	236.710	&	61239.042	&	0.0000	\\
+&	Fhat3	&	-3.402	&	5.872	&	-0.579	&	0.336	&	0.5623	\\
+Females	&	(Intercept)	&	26.970	&	0.113	&	238.303	&	59962.846	&	0.0000	\\
+&	Fhat3	&	0.853	&	4.610	&	0.185	&	0.034	&	0.8533	\\
+
+		
+		\hline
+		
+	\end{tabular}
+	
+	\label{tbl:Fixed_effects}
+\end{table}
+
+
+
+\vspace{1cm}
+\begin{table}[H]
+	\captionsetup{width=.9\textwidth}
+	\caption{Linkage map information for the current study. Order is the order of markers on the chromosome. SNP.Name is the Ovine SNP50 BeadChip identifier. Chr is the chromosome number, where 27 is the X chromosome. cMPosition, r, cMdiff are the sex-averaged centiMorgan position, recombination fraction and centiMorgan difference with the following locus, respectively; similarly this is provided for Female and Male maps. Oar3\_Chr and Oar3\_Pos are the relative chromosome number and position relative to the sheep genome (Oar\_v3.1), cMPosition.2016, cMPosition.Female.2016 and cMPosition.Male.2016 indicate the centiMorgan positions as determined by the previous study \citep{Johnston2016}.}
+	\centering
+	
+	[File: Table\_S2\_Linkage\_Map.txt]
+	
+	\label{tbl:Linkage_Map}
+\end{table}
+
+
+\vspace{1cm}
+\begin{table}[H]
+	\captionsetup{width=.9\textwidth}
+	\caption{Association statistics for genome-wide association studies of autosomal chromosome counts. Sex indicates analyses for both sexes, females only and males only. SNP.Name is the Ovine SNP50 BeadChip identifier. Chromosome	and Position (bp) are given relative to the sheep genome Oar\_v3.1. A1 and A2 reference and alternate allele at each SNP. effB is the slope of the effect of allele A2, with the standard error se\_effB. Chi2.1df and P1df  is the association chi-squared statistic and associated P-value, respectively, before correction with genomic control $\lambda$. Pc1df is the corrected P-value after genomic control. Exp is the corresponding P-value for that SNP locus assuming a null distribution of P-values (see Figure 2). Q.2 is the minor allele frequency. Cumu is the cumulative genomic distance.}
+	\centering
+	[File: Table\_S3\_ACC\_GWAS.txt]
+	
+	\label{tbl:GWAS_Results}
+\end{table}
+
+
+\begin{table}[H]
+	\captionsetup{width=.9\textwidth}
+	\caption{Gene positions in the GWAS significant regions obtained using biomaRt v2.42.1. ensembl\_gene\_id is the Ensembl identifier for the sheep gene. external\_gene\_name is the sheep gene name. chromosome\_name, start\_position and end\_position are the chromosome number, start and stop positions for each gene, respectively. Meiotic indicates whether this gene and/or its orthologues in other species have GO terms associated with meiotic processes. Orthos indicates the unique gene names associated with orthologues of each gene.}
+	\centering
+	[File: Table\_S4\_Gene\_List\_Table.txt]
+	\label{tbl:Gene_list}
+\end{table}
+
+
+
+\end{document}

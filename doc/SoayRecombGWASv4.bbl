@@ -1,0 +1,251 @@
+\begin{thebibliography}{38}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{\sc Antol{\'{i}}n} {\em et~al.\/}(2017){\sc Antol{\'{i}}n}, {\sc
+  Nettelblad}, {\sc Gorjanc}, {\sc Money} and {\sc Hickey}}]{Antolin2017}
+{\sc Antol{\'{i}}n, R.}, {\sc C.~Nettelblad}, {\sc G.~Gorjanc}, {\sc D.~Money},
+  and {\sc J.~M. Hickey}, 2017 {A hybrid method for the imputation of genomic
+  data in livestock populations}.
+\newblock Genetics Selection Evolution : 1--17.
+
+\bibitem[{{\sc Barton} and {\sc Charlesworth}(1998)}]{Barton1998}
+{\sc Barton, N.~H.}, and {\sc B.~Charlesworth}, 1998 {Why sex and
+  recombination?}
+\newblock Science {\bf 74}: 187--195.
+
+\bibitem[{{\sc Battagin} {\em et~al.\/}(2016){\sc Battagin}, {\sc Gorjanc},
+  {\sc Faux}, {\sc Johnston} and {\sc Hickey}}]{Battagin2016}
+{\sc Battagin, M.}, {\sc G.~Gorjanc}, {\sc A.-M. Faux}, {\sc S.~E. Johnston},
+  and {\sc J.~M. Hickey}, 2016 {Effect of manipulating recombination rates on
+  response to selection in livestock breeding programs}.
+\newblock Genet. Select. Evol. {\bf 48}: 44.
+
+\bibitem[{{\sc Butler} {\em et~al.\/}(2009){\sc Butler}, {\sc Cullis}, {\sc
+  Gilmour} and {\sc Gogel}}]{Butler2009}
+{\sc Butler, D.~G.}, {\sc B.~R. Cullis}, {\sc A.~R. Gilmour}, and {\sc B.~J.
+  Gogel}, 2009 {Mixed Models for S language Environments: ASReml-R reference
+  manual.}
+
+\bibitem[{{\sc Clutton-Brock} {\em et~al.\/}(2004){\sc Clutton-Brock}, {\sc
+  Pemberton}, {\sc Coulson}, {\sc Stevenson} and {\sc
+  MacColl}}]{CluttonBrock2004}
+{\sc Clutton-Brock, T.}, {\sc J.~Pemberton}, {\sc T.~N. Coulson}, {\sc I.~R.
+  Stevenson}, and {\sc A.~D.~C. MacColl}, 2004 {The sheep of St Kilda}.
+\newblock In {\em Soay Sheep: Dynamics and Selection in an Island
+  Population.2\/}. Cambridge University Press, 17--51.
+
+\bibitem[{{\sc Durinck} {\em et~al.\/}(2009){\sc Durinck}, {\sc Spellman}, {\sc
+  Birney} and {\sc Huber}}]{Durinck2009}
+{\sc Durinck, S.}, {\sc P.~T. Spellman}, {\sc E.~Birney}, and {\sc W.~Huber},
+  2009 {Mapping identifiers for the integration of genomic datasets with the
+  R/Bioconductor package biomaRt}.
+\newblock Nature protocols {\bf 4}: 1184--1191.
+
+\bibitem[{{\sc Gao} {\em et~al.\/}(2008){\sc Gao}, {\sc Starmer} and {\sc
+  Martin}}]{Gao2008}
+{\sc Gao, X.}, {\sc J.~Starmer}, and {\sc E.~R. Martin}, 2008 {A multiple
+  testing correction method for genetic association studies using correlated
+  single nucleotide polymorphisms.}
+\newblock Genetic epidemiology {\bf 32}: 361--369.
+
+\bibitem[{{\sc Green} {\em et~al.\/}(1990){\sc Green}, {\sc Falls} and {\sc
+  Crooks}}]{Green1990}
+{\sc Green, P.}, {\sc K.~Falls}, and {\sc S.~Crooks}, 1990 {\em {Documentation
+  for CRIMAP, version 2.4}\/}.
+\newblock Washington University School of Medicine.
+
+\bibitem[{{\sc Halldorsson} {\em et~al.\/}(2019){\sc Halldorsson}, {\sc
+  Palsson}, {\sc Stefansson}, {\sc Jonsson}, {\sc Hardarson} {\em
+  et~al.\/}}]{Halldorsson2019}
+{\sc Halldorsson, B.~V.}, {\sc G.~Palsson}, {\sc O.~A. Stefansson}, {\sc
+  H.~Jonsson}, {\sc M.~T. Hardarson}, {\em et~al.\/}, 2019 {Characterizing
+  mutagenic effects of recombination through a sequence-level genetic map}.
+\newblock Science {\bf 363}: eaau1043.
+
+\bibitem[{{\sc Hassold} and {\sc Hunt}(2001)}]{Hassold2001}
+{\sc Hassold, T.}, and {\sc P.~Hunt}, 2001 {To err (meiotically) is human: the
+  genesis of human aneuploidy.}
+\newblock Nat. Rev. Genet. {\bf 2}: 280--291.
+
+\bibitem[{{\sc Henderson}(1975)}]{Henderson1975}
+{\sc Henderson, C.~R.}, 1975 {Best linear unbiased estimation and prediction
+  under a selection model}.
+\newblock Biometrics {\bf 31}: 423--447.
+
+\bibitem[{{\sc Hickey} {\em et~al.\/}(2012){\sc Hickey}, {\sc Kinghorn}, {\sc
+  Tier}, {\sc Werf} and {\sc Cleveland}}]{Hickey2012}
+{\sc Hickey, J.~M.}, {\sc B.~P. Kinghorn}, {\sc B.~Tier}, {\sc J.~H. J. V.~D.
+  Werf}, and {\sc M.~A. Cleveland}, 2012 {A phasing and imputation method for
+  pedigreed populations that results in a single-stage genomic evaluation}.
+\newblock Genet Sel Evol {\bf 44}: 9.
+
+\bibitem[{{\sc Hill} and {\sc Robertson}(1966)}]{Hill1966}
+{\sc Hill, W.~G.}, and {\sc a.~Robertson}, 1966 {The effect of linkage on
+  limits to artificial selection.}
+\newblock Genet. Res. {\bf 8}: 269--294.
+
+\bibitem[{{\sc Huisman}(2017)}]{Huisman2017}
+{\sc Huisman, J.}, 2017 {Pedigree reconstruction from SNP data: parentage
+  assignment, sibship clustering and beyond}.
+\newblock Mol. Ecol. Resour. {\bf 17}: 1009--1024.
+
+\bibitem[{{\sc Johnsson} {\em et~al.\/}(2020){\sc Johnsson}, {\sc Whalen}, {\sc
+  Ros-Freixedes}, {\sc Gorjanc}, {\sc Chen} {\em et~al.\/}}]{Johnsson2020}
+{\sc Johnsson, M.}, {\sc A.~Whalen}, {\sc R.~Ros-Freixedes}, {\sc G.~Gorjanc},
+  {\sc C.-Y. Chen}, {\em et~al.\/}, 2020 Genetics of recombination rate
+  variation in the pig.
+\newblock bioRxiv .
+
+\bibitem[{{\sc Johnston} {\em et~al.\/}(2016){\sc Johnston}, {\sc
+  B{\'{e}}r{\'{e}}nos}, {\sc Slate} and {\sc Pemberton}}]{Johnston2016}
+{\sc Johnston, S.~E.}, {\sc C.~B{\'{e}}r{\'{e}}nos}, {\sc J.~Slate}, and {\sc
+  J.~M. Pemberton}, 2016 {Conserved genetic architecture underlying individual
+  recombination rate variation in a wild population of soay sheep (Ovis
+  aries)}.
+\newblock Genetics {\bf 203}: 583--598.
+
+\bibitem[{{\sc Johnston} {\em et~al.\/}(2018){\sc Johnston}, {\sc Huisman} and
+  {\sc Pemberton}}]{Johnston2018}
+{\sc Johnston, S.~E.}, {\sc J.~Huisman}, and {\sc J.~M. Pemberton}, 2018 {A
+  genomic region containing \textit{REC8} and \textit{RNF212B} is associated
+  with individual recombination rate variation in a wild population of red deer
+  (\textit{Cervus elaphus}).}
+\newblock BioRxiv .
+
+\bibitem[{{\sc Kadri} {\em et~al.\/}(2016){\sc Kadri}, {\sc Harland}, {\sc
+  Faux}, {\sc Cambisano}, {\sc Karim} {\em et~al.\/}}]{Kadri2016}
+{\sc Kadri, N.~K.}, {\sc C.~Harland}, {\sc P.~Faux}, {\sc N.~Cambisano}, {\sc
+  L.~Karim}, {\em et~al.\/}, 2016 {Coding and noncoding variants in HFM1, MLH3,
+  MSH4, MSH5, RNF212, and RNF212B affect recombination rate in cattle.}
+\newblock Genome research {\bf 26}: 1323--1332.
+
+\bibitem[{{\sc Kijas} {\em et~al.\/}(2009){\sc Kijas}, {\sc Townley}, {\sc
+  Dalrymple}, {\sc Heaton}, {\sc Maddox} {\em et~al.\/}}]{Kijas2009}
+{\sc Kijas, J.~W.}, {\sc D.~Townley}, {\sc B.~P. Dalrymple}, {\sc M.~P.
+  Heaton}, {\sc J.~F. Maddox}, {\em et~al.\/}, 2009 {A genome wide survey of
+  SNP variation reveals the genetic structure of sheep breeds.}
+\newblock PLoS ONE {\bf 4}: e4668.
+
+\bibitem[{{\sc Kong} {\em et~al.\/}(2004){\sc Kong}, {\sc Barnard}, {\sc
+  Gudbjartsson}, {\sc Thorleifsson}, {\sc Jonsdottir} {\em
+  et~al.\/}}]{Kong2004}
+{\sc Kong, A.}, {\sc J.~Barnard}, {\sc D.~F. Gudbjartsson}, {\sc
+  G.~Thorleifsson}, {\sc G.~Jonsdottir}, {\em et~al.\/}, 2004 {Recombination
+  rate and reproductive success in humans.}
+\newblock Nat. Genet. {\bf 36}: 1203--1206.
+
+\bibitem[{{\sc Kong} {\em et~al.\/}(2014){\sc Kong}, {\sc Thorleifsson}, {\sc
+  Frigge}, {\sc Masson}, {\sc Gudbjartsson} {\em et~al.\/}}]{Kong2014}
+{\sc Kong, A.}, {\sc G.~Thorleifsson}, {\sc M.~L. Frigge}, {\sc G.~Masson},
+  {\sc D.~F. Gudbjartsson}, {\em et~al.\/}, 2014 {Common and low-frequency
+  variants associated with genome-wide recombination rate.}
+\newblock Nat. Genet. {\bf 46}: 11--6.
+
+\bibitem[{{\sc Kong} {\em et~al.\/}(2008){\sc Kong}, {\sc Thorleifsson}, {\sc
+  Stefansson}, {\sc Masson}, {\sc Helgason} {\em et~al.\/}}]{Kong2008}
+{\sc Kong, A.}, {\sc G.~Thorleifsson}, {\sc H.~Stefansson}, {\sc G.~Masson},
+  {\sc A.~Helgason}, {\em et~al.\/}, 2008 {Sequence variants in the RNF212 gene
+  associate with genome-wide recombination rate.}
+\newblock Science {\bf 319}: 1398--1401.
+
+\bibitem[{{\sc Lenormand} and {\sc Dutheil}(2005)}]{Lenormand2005}
+{\sc Lenormand, T.}, and {\sc J.~Dutheil}, 2005 {Recombination difference
+  between sexes: a role for haploid selection.}
+\newblock PLoS biology {\bf 3}: e63.
+
+\bibitem[{{\sc Ma} {\em et~al.\/}(2015){\sc Ma}, {\sc O'Connell}, {\sc
+  VanRaden}, {\sc Shen}, {\sc Padhi} {\em et~al.\/}}]{Ma2015}
+{\sc Ma, L.}, {\sc J.~R. O'Connell}, {\sc P.~M. VanRaden}, {\sc B.~Shen}, {\sc
+  A.~Padhi}, {\em et~al.\/}, 2015 {Cattle Sex-Specific Recombination and
+  Genetic Control from a Large Pedigree Analysis}.
+\newblock PLoS Genet. {\bf 11}: e1005387.
+
+\bibitem[{{\sc Muller}(1964)}]{Muller1964}
+{\sc Muller, H.}, 1964 {The relation of recombination to mutational advance}.
+\newblock Mutat. Res. {\bf 1}: 2--9.
+
+\bibitem[{{\sc Myers} {\em et~al.\/}(2005){\sc Myers}, {\sc Bottolo}, {\sc
+  Freeman}, {\sc McVean} and {\sc Donnelly}}]{Myers2005}
+{\sc Myers, S.}, {\sc L.~Bottolo}, {\sc C.~Freeman}, {\sc G.~McVean}, and {\sc
+  P.~Donnelly}, 2005 {A fine-scale map of recombination rates and hotspots
+  across the human genome.}
+\newblock Science {\bf 310}: 321--4.
+
+\bibitem[{{\sc Otto} and {\sc Barton}(2001)}]{Otto2001}
+{\sc Otto, S.~P.}, and {\sc N.~H. Barton}, 2001 {Selection for recombination in
+  small populations}.
+\newblock Evolution {\bf 55}: 1921--1931.
+
+\bibitem[{{\sc Otto} and {\sc Lenormand}(2002)}]{Otto2002}
+{\sc Otto, S.~P.}, and {\sc T.~Lenormand}, 2002 {Resolving the paradox of sex
+  and recombination.}
+\newblock Nat. Rev. Genet. {\bf 3}: 252--261.
+
+\bibitem[{{\sc Otto} and {\sc Payseur}(2019)}]{Otto2019}
+{\sc Otto, S.~P.}, and {\sc B.~A. Payseur}, 2019 {Crossover Interference:
+  Shedding Light on the Evolution of Recombination.}
+\newblock Annual review of genetics {\bf 53}: 19--44.
+
+\bibitem[{{\sc Petit} {\em et~al.\/}(2017){\sc Petit}, {\sc Astruc}, {\sc
+  Sarry}, {\sc Drouilhet}, {\sc Fabre} {\em et~al.\/}}]{Petit2017}
+{\sc Petit, M.}, {\sc J.-M. Astruc}, {\sc J.~Sarry}, {\sc L.~Drouilhet}, {\sc
+  S.~Fabre}, {\em et~al.\/}, 2017 {Variation in Recombination Rate and Its
+  Genetic Determinism in Sheep Populations}.
+\newblock Genetics {\bf 207}: 767--784.
+
+\bibitem[{{\sc Reynolds} {\em et~al.\/}(2013){\sc Reynolds}, {\sc Qiao}, {\sc
+  Yang}, {\sc Chen}, {\sc Jackson} {\em et~al.\/}}]{Reynolds2013}
+{\sc Reynolds, A.}, {\sc H.~Qiao}, {\sc Y.~Yang}, {\sc J.~K. Chen}, {\sc
+  N.~Jackson}, {\em et~al.\/}, 2013 {RNF212 is a dosage-sensitive regulator of
+  crossing-over during mammalian meiosis.}
+\newblock Nat. Genet. {\bf 45}: 269--78.
+
+\bibitem[{{\sc R{\"{o}}nneg{\aa}rd} {\em et~al.\/}(2016){\sc
+  R{\"{o}}nneg{\aa}rd}, {\sc McFarlane}, {\sc Husby}, {\sc Kawakami}, {\sc
+  Ellegren} {\em et~al.\/}}]{Ronnegard2016}
+{\sc R{\"{o}}nneg{\aa}rd, L.}, {\sc S.~E. McFarlane}, {\sc A.~Husby}, {\sc
+  T.~Kawakami}, {\sc H.~Ellegren}, {\em et~al.\/}, 2016 {Increasing the power
+  of genome wide association studies in natural populations using repeated
+  measures - evaluation and implementation}.
+\newblock Methods in Ecology and Evolution {\bf 7}: 792--799.
+
+\bibitem[{{\sc Samuk} {\em et~al.\/}(2020){\sc Samuk}, {\sc Manzano-Winkler},
+  {\sc Ritz} and {\sc Noor}}]{Samuk2020}
+{\sc Samuk, K.}, {\sc B.~Manzano-Winkler}, {\sc K.~R. Ritz}, and {\sc M.~A.~F.
+  Noor}, 2020 {Natural Selection Shapes Variation in Genome-wide Recombination
+  Rate in {\textless}em{\textgreater}Drosophila
+  pseudoobscura{\textless}/em{\textgreater}}.
+\newblock Current Biology {\bf 30}: 1517--1528.e6.
+
+\bibitem[{{\sc Sandor} {\em et~al.\/}(2012){\sc Sandor}, {\sc Li}, {\sc
+  Coppieters}, {\sc Druet}, {\sc Charlier} {\em et~al.\/}}]{Sandor2012}
+{\sc Sandor, C.}, {\sc W.~Li}, {\sc W.~Coppieters}, {\sc T.~Druet}, {\sc
+  C.~Charlier}, {\em et~al.\/}, 2012 Genetic variants in \textit{REC8},
+  \textit{RNF212}, and \textit{PRDM9} influence male recombination in cattle.
+\newblock PLoS Genet. {\bf 8}: 1--13.
+
+\bibitem[{{\sc Stapley} {\em et~al.\/}(2017){\sc Stapley}, {\sc Feulner}, {\sc
+  Johnston}, {\sc Santure} and {\sc Smadja}}]{Stapley2017}
+{\sc Stapley, J.}, {\sc P.~G.~D. Feulner}, {\sc S.~E. Johnston}, {\sc A.~W.
+  Santure}, and {\sc C.~M. Smadja}, 2017 {Variation in recombination frequency
+  and distribution across Eukaryotes: patterns and processes.}
+\newblock Philos. Trans. R. Soc. Lond., B, Biol. Sci. {\bf 372}: 20160455.
+
+\bibitem[{{\sc Stoffel} {\em et~al.\/}(2020){\sc Stoffel}, {\sc Johnston}, {\sc
+  Pilkington} and {\sc Pemberton}}]{Stoffel2020}
+{\sc Stoffel, M.}, {\sc S.~Johnston}, {\sc J.~Pilkington}, and {\sc
+  J.~Pemberton}, 2020 {Genetic architecture and lifetime dynamics of inbreeding
+  depression in a wild mammal.}
+\newblock bioRxiv .
+
+\bibitem[{{\sc Wickham}(2016)}]{Wickham2016}
+{\sc Wickham, H.}, 2016 {\em {ggplot2: Elegant Graphics for Data Analysis}\/}.
+\newblock Springer-Verlag New York.
+
+\bibitem[{{\sc Yang} {\em et~al.\/}(2011){\sc Yang}, {\sc Lee}, {\sc Goddard}
+  and {\sc Visscher}}]{Yang2011}
+{\sc Yang, J.}, {\sc S.~H. Lee}, {\sc M.~E. Goddard}, and {\sc P.~M. Visscher},
+  2011 {GCTA: a tool for genome-wide complex trait analysis.}
+\newblock Am. J. Hum. Genet. {\bf 88}: 76--82.
+
+\end{thebibliography}
